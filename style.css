@@ -17,7 +17,12 @@ body {
 
 main {
     background-color: black;
+    padding: 30px 25px;
     flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 10px;
 }
 
 footer {
@@ -27,6 +32,35 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+header {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    padding: 5px;
+}
+
+header .header-left {
+    background-color: rgb(102, 101, 101);
+    padding: 3px;
+    border-radius: 5px;
+}
+
+.header-left i {
+    display: inline-block;
+}
+
+.header-left p {
+    display: inline-block;
+}
+
+header .header-right {
+    background-color: rgb(102, 101, 101);
+    padding: 4px;
+    border-radius: 5px;
 }
 
 .nav-left, .nav-right {
@@ -71,4 +105,25 @@ ul li span {
 
 ul li {
     text-align: center;
+}
+
+main .photo {
+    position: relative;
+}
+
+.photo .photo-text-name {
+    color: white;
+    background-color: grey;
+    position: absolute;
+    top: 175px;
+    left: 0;
+    padding: 2px;
+}
+
+.photo i {
+    display: inline-block;
+}
+
+.photo p {
+    display: inline-block;
 }
